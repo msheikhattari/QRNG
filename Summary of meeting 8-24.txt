@@ -1,0 +1,16 @@
+8/24/22 Meeting summary
+
+There are four main buckets of error-correction that we can consider:
+1. Calibration circuits, built-in by IonQ (Danny)
+2. Bell tests, qkd (Hannah)
+3. GHZ destructive error correction (Mohammad)
+4. Shor's, 5-qubit, 3-qubit bitflip/phaseflip codes (Mohammad)
+
+We discussed the importance of collection data run on the actual IonQ hardware before our conference presentation.
+
+We currently have data from 7/14 (baseline, native gateset, no error correction aside from IonQ's own calibration circuits) and 7/20 (non-native gateset, no calibration circuits)
+- The data was compared and a marked improvement was seen in the data set originating from IonQ's native gateset which does use calibration circuits. In each case, four tests fail by default due to the small size of the data set.
+- One additional test passed for the data set using calibration circuits
+- We can use the 7/14 data set as a baseline for future comparison if we use the native gateset moving forward, or the 7/20 data set if we use the non-native gateset moving forward.
+
+By next meeting, I will aim to run the code which I presented today on the actual hardware and get some data from the destructive error-correction, and to compare that with the baseline dataset
